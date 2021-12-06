@@ -1,5 +1,3 @@
-# Pre-Course Assessment
-
 ## Instructions
 
 #### The Files
