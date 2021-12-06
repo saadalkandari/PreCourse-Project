@@ -7,20 +7,19 @@
  ***************************/
 
 import {
-  abbreviate,
-  afterX,
-  characterCount,
-  elementInArray,
-  isUpperCase,
-  largestIncrement,
-  reverseString,
   sumOdds,
+  characterCount,
+  largestIncrement,
+  afterX,
+  abbreviate,
+  isUpperCase,
+  elementInArray,
 } from "../functions";
 
 describe("sumOdds(numbers)", () => {
   test("returns the sum of only the ODD numbers.", () => {
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const oddSum = 25;
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    const oddSum = 36;
     expect(sumOdds(numbers)).toEqual(oddSum);
   });
 });
@@ -33,9 +32,16 @@ describe("characterCount(string, c)", () => {
     expect(characterCount(string, c)).toEqual(times);
   });
 
-  test("is case-insensitive.", () => {
+  test("string is case-insensitive.", () => {
     const string = "aAaebc";
     const c = "a";
+    const times = 3;
+    expect(characterCount(string, c)).toEqual(times);
+  });
+
+  test("c is case-insensitive.", () => {
+    const string = "aAaebc";
+    const c = "A";
     const times = 3;
     expect(characterCount(string, c)).toEqual(times);
   });
@@ -74,6 +80,13 @@ describe("afterX(numbers, x)", () => {
 });
 
 describe("abbreviate(firstName, lastName)", () => {
+  test("returns the correct initials of a name", () => {
+    const firstName = "Mickey";
+    const lastName = "Singer";
+    const initials = "MS";
+    expect(abbreviate(firstName, lastName)).toEqual(initials);
+  });
+
   test("returns the correct initials of a name in uppercase", () => {
     const firstName = "mickey";
     const lastName = "singer";
@@ -108,6 +121,7 @@ describe("elementInArray(numbers, x)", () => {
   });
 });
 
+/*
 describe("reverseString(string)", () => {
   test("returns the reverse of a string.", () => {
     const string = "rfvwkev";
@@ -115,3 +129,4 @@ describe("reverseString(string)", () => {
     expect(reverseString(string)).toEqual(reversed);
   });
 });
+*/

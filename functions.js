@@ -125,22 +125,6 @@ function elementInArray(numbers, x) {
 }
 // console.log(elementInArray([5, 6, 7], 8));
 
-/**
- * reverseString(string):
- * - receives a string
- * - returns the reverse of the string
- *
- * e.g.
- * reverseString("string") -> "gnirts"
- * reverseString("CODED") -> "DEDOC"
- *
- */
-function reverseString(string) {
-  // Your code here
-}
-
-// console.log(reverseString("CODED"));
-
 module.exports = {
   sumOdds,
   characterCount,
@@ -149,5 +133,4 @@ module.exports = {
   abbreviate,
   isUpperCase,
   elementInArray,
-  reverseString,
 };
