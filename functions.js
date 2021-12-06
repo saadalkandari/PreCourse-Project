@@ -21,7 +21,6 @@
 function sumOdds(numbers) {
   // Your code here
 }
-
 // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
 
 /**
@@ -34,41 +33,20 @@ function sumOdds(numbers) {
  * characterCount("Michael Stephenson", "e") -> 3
  * characterCount("Character Count is clever", "c") -> 4
  *
- * Hint: Use string methods to make it case-insensitive
+ * Hint: You need to turn the string into an array first
+ * Another Hint: Use string methods to make it case-insensitive
  */
 function characterCount(string, c) {
   // Your code here
 }
-
 // console.log(characterCount("Character Count is clever", "c"));
-
-/**
- * differences(numbers):
- * - receives an array of numbers
- * - returns an array that has the difference in the values of the numbers array.
- * - see example below for clarification.
- *
- * e.g.
- * differences([1, 3, 7, 9, 12]) -> [2, 4, 2, 3]
- * 3 - 1 = 2
- * 7 - 3 = 4
- * 9 - 7 = 2
- * 12 - 9 = 3
- *
- * differences([11, 35, 52, 14, 56]) -> [24,  17, -38,  42]
- */
-function differences(numbers) {
-  // Your code here
-}
-
-// console.log(differences([11, 35, 52, 14, 56]));
 
 /**
  * largestIncrement(numbers):
  * - receives an array of numbers
  * - returns the largest difference between two consecutive numbers in the array
  * - see example below for clarification
- *
+ * - assume all differences are positive numbers
  * e.g.
  * largestIncrement([1, 3, 7, 9, 12]) -> 4
  * 3 - 1 = 2
@@ -82,7 +60,6 @@ function differences(numbers) {
 function largestIncrement(numbers) {
   // Your code here
 }
-
 // console.log(largestIncrement([11, 35, 52, 14, 56, 601, 777, 888, 999]));
 
 /**
@@ -99,7 +76,6 @@ function largestIncrement(numbers) {
 function afterX(numbers, x) {
   // Your code here
 }
-
 // console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
 
 /**
@@ -116,7 +92,6 @@ function afterX(numbers, x) {
 function abbreviate(firstName, lastName) {
   // Your code here
 }
-
 // console.log(abbreviate("miss", "Stephane"));
 
 /**
@@ -148,7 +123,6 @@ function isUpperCase(string) {
 function elementInArray(numbers, x) {
   // Your code here
 }
-
 // console.log(elementInArray([5, 6, 7], 8));
 
 /**
@@ -170,7 +144,6 @@ function reverseString(string) {
 module.exports = {
   sumOdds,
   characterCount,
-  differences,
   largestIncrement,
   afterX,
   abbreviate,
