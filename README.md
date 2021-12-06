@@ -6,9 +6,9 @@
 
 **Fork** this repository and clone your fork (make sure you clone it into your `development` directory):
 
-```bash
-$ git clone https://github.com/<your_username>/PreCourse-Project.git
-```
+      ```bash
+      $ git clone https://github.com/<your_username>/PreCourse-Project.git
+      ```
 
 #### Running The Tests
 
@@ -18,15 +18,27 @@ Install all the requirements:
 2. Install the required packages with the following command:
 
    ```bash
-   $ yarn install
+   $ npm install
    ```
 
-Run the tests:
+3. Run the tests:
 
-```bash
-$ yarn test
-```
+   ```bash
+   $ npm test functions
+   ```
 
 This command will run the testing file and test your code to make sure it has all the required features.
+
+You'll know when you're done when your code passes all the tests.
+
+#### BONUS
+
+1. Go to `debug.js`, you'll find two functions. Both of them don't work.
+2. Fix the two functions.
+3. To run the bonus tests:
+
+   ```bash
+   $ npm test debug
+   ```
 
 You'll know when you're done when your code passes all the tests.
